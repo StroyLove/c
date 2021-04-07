@@ -1,0 +1,143 @@
+1 Практическая по c++
+
+
+1
+#include <iostream>
+
+using namespace std;
+int main() {
+   int x;
+   float c;
+   char q;
+   long w;
+   cout<<"Введите 3 числа и букву";
+   cin>>x;
+   cin>>c;
+   cin>>w;
+   cin>>q;
+   cout<<x<<endl;
+   cout<<c<<endl;
+   cout<<w<<endl;
+   cout<<q<<endl;
+return 0;
+}
+
+2
+#include <iostream>
+using namespace std;
+int main(){
+    char a=0,b=0,c=0,d=0,e=0;
+    cout<<"Введите слово из 5 символов:"<<endl;
+    cin>>a>>b>>c>>d>>e;
+    cout<<"Ваше слово: "<<a<<b<<c<<d<<e<<endl;
+return 0;
+}
+
+3
+#include <iostream>
+using namespace std;
+int main(){
+    int x,z;
+    cout<<"Введите первое число:";
+    cin>>x;
+    cout<<"Введите второе число:";
+    cin>>z;
+    cout<<"Произведение:";
+    cout<<x*z<<endl;
+    cout<<"Сумма:";
+    cout<<x+z<<endl;
+    cout<<"Разница:";
+    cout<<x-z<<endl;
+    cout<<"Среднее арифметическое:";
+    cout<<(x+z)/2<<endl;
+return 0;
+}
+
+
+
+
+6
+#include <iostream>
+using namespace std;
+int main(){
+    int x;
+    cout<<"Введите сторону квадрата:";
+    cin>>x;
+    cout<<"Площадь:"<<x*2<<endl;
+    cout<<"Периметр:"<<x*4<<endl;
+return 0;
+}
+
+7
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    int x,z;
+    cout<<"Введите первый катет:";
+    cin>>x;
+    cout<<"Введите второй катет:";
+    cin>>z;
+    cout<<sqrt(pow(x,2)+pow(z,2))<<endl; 
+return 0;
+}
+
+
+
+8
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    int x,z;
+    cout<<"Введите количество школьников:";
+    cin>>x;
+    cout<<"Введите количество яблок:";
+    cin>>z;
+    cout<<z%x<<endl;
+return 0;
+}
+9
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    int x;
+    cout<<"Введите значение x:";
+    cin>>x;
+    cout<<"Значение функции равно:"<<pow(x,2)-3*x-100<<endl;
+return 0;
+}
+
+10
+#include <iostream>
+using namespace std;
+int main(){
+    cout<<"Строилов Владимир ББФБО-02-20"<<endl;
+return 0;
+}
+11
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    int z;
+        z=pow(10,2)-4*3;
+    cout<<"x1="<<(10-sqrt(z))/6<<endl;
+    cout<<"x2="<<(10+sqrt(z))/6<<endl;
+return 0;
+}
+
+
+
+14.
+
+#include <iostream>
+using namespace std;
+int main(){
+    int z,x,c;
+    c=z;
+    z=x;
+    x=c;
+return 0;
+}
