@@ -1,0 +1,152 @@
+Третья практическая
+
+
+1
+#include <iostream>
+using namespace std;
+int main() {
+    int x,z;
+    cout<<"Введите 1 число:";
+    cin>>x;
+    cout<<"Введите 2 число:";
+    cin>>z;
+    if (x%2==0){cout<<"Нечетное число:"<<z<<endl;}
+    else {cout<<"Нечетное число:"<<x<<endl;}
+return 0;
+ }
+2
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int x,z,c;
+    cout<<"Введите 1 число:";
+    cin>>z;
+    cout<<"Введите 2 число:";
+    cin>>x;
+    cout<<"Введите 3 число:";
+    cin>>c;
+    
+    if (z<x){
+        if (x<c){cout<<"Среднее число:"<<x<<endl;}}
+    else if (z>x){
+        if (x>c){cout<<"Среднее число:"<<x<<endl;}}
+    
+    if(x<z){
+        if (z<c){cout<<"Среднее число:"<<z<<endl;}}
+    else if (x>z){
+        if(z>c){cout<<"Среднее число:"<<z<<endl;}}
+    
+    if(x<c){
+        if (c<z){cout<<"Среднее число:"<<c<<endl;}}
+    else if (x>c){
+        if(c>z){cout<<"Среднее число:"<<c<<endl;}}
+}
+
+3
+#include <iostream>
+using namespace std;
+int main() {
+    int x;
+    char c;
+    cout<<"Что вы хотите сделать?"<<endl;
+    cout<<"Перевести Байты в Килобайты (b)"<<endl;
+    cout<<"Перевести Килобайты в Байты (k)"<<endl;
+    cin>>c;
+    if (c=='b'){
+        cout<<"Введите количество байт:";
+        cin>>x;
+        cout<<x<<"б="<<x/1024<<"кб"<<endl;}
+    if (c=='k'){
+        cout<<"Введите количество килобайт:";
+        cin>>x;
+        cout<<x<<"кб="<<x*1024<<"б"<<endl;}
+return 0;
+}
+5
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int x,c;
+    cout<<"Введите первое число:";
+    cin>>x;
+    cout<<"Введите второе число:";
+    cin>>c;
+    if (x%c==0){cout<<"Число делится"<<endl;}
+    else {cout<<"Число не делится"<<endl;}
+    cout<<"Частное="<<x/c<<endl;
+    if (x%c>0){cout<<"Остаток"<<x%c<<endl;}
+    if (x%c<0){cout<<"Остаток"<<x%c<<endl;}
+return 0;
+}
+
+
+
+
+
+11
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int x,z,c;
+    cout<<"Введите 1 число:";
+    cin>>z;
+    cout<<"Введите 2 число:";
+    cin>>x;
+    cout<<"Введите 3 число:";
+    cin>>c;
+    
+    if (z>x){
+        if (z>c){cout<<"Наибольшее число:"<<z<<endl;}}
+   
+    if(x>c){
+        if (x>z){cout<<"Наибольшее число:"<<x<<endl;}}
+  
+    if(c>x){
+        if (c>z){cout<<"Наибольшее число:"<<c<<endl;}}
+   
+return 0;
+}
+    
+
+
+
+
+14
+#include <iostream>
+using namespace std;
+int main() {
+    int x;
+    cout<<"Напишите возраст:";
+    cin>>x;
+    if (x<6){cout<<"Дошкольник"<<endl;}
+    if(x>=6){
+        if (x<22){cout<<"Ученик"<<endl;}
+        else if(x>=22){
+            if (x<60){cout<<"Работник"<<endl;}
+            else {cout<<"Пенсионер"<<endl;}
+        }
+    }
+return 0;
+}
+    
+
+
+15
+
+#include <iostream>
+namespace std;
+int main() {
+    int x,z;
+    cout<<"ВВедите ваш возраст:";
+    cin>>x;
+    cout<<"Введите ваш стаж:";
+    cin>>z;
+    if (x<=42){
+        if (z>=20){cout<<"Вы приняты"<<endl;}
+        else {cout<<"Вы не приняты"<<endl;}}
+    else {cout<<"Вы не приняты"<<endl;}
+return 0;
+}
