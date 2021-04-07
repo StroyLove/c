@@ -1,0 +1,154 @@
+Вторая практическая
+
+1
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    int n,b,i,n2,z,x;
+    i=0;
+    z=0;
+    x=0;
+    cin>>n;
+    cin>>b;
+    n2=n;
+    while (i==0){
+        n=n+1;
+        z=z+1;
+        if (n%b==0){i=1;}
+    }
+    
+    while(i==1){
+        n2=n2-1;
+        x=x+1;
+        if (n2%b==0){i=2;}
+    }
+    if (z>x){
+        cout<<n2;}
+    else {
+        cout<<n;
+    }
+return 0;
+}
+
+2
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    int x,z;
+    cout<<"Введите первый катет:";
+    cin>>x;
+    cout<<"Введите второй катет:";
+    cin>>z;
+    cout<<sqrt(pow(x,2)+pow(z,2))<<endl; 
+return 0;
+}
+
+
+3
+#include <iostream>
+using namespace std;
+int main(){
+    int x,z;
+    cout<<"Введите первое трехзначное число:";
+    cin>>x;
+    cout<<"Введите второе трехзначное число:";
+    cin>>z;
+    cout<<"Произведение:";
+    cout<<x*z<<endl;
+    cout<<"Сумма:";
+    cout<<x+z<<endl;
+    
+return 0;
+}
+
+
+
+
+
+5
+#include <iostream>
+using namespace std;
+int main() {
+    int m,s,n,y;
+    float p;
+    cout<<"Введите сумму кредита:";
+    cin>>n;
+    cout<<"Введите количество лет на которое берете кредит:";
+    cin>>y;
+    cout<<"Введите процент:";
+    cin>>p;
+    s=n+(n*(p/100))*y;
+    m=s/(y*12);
+    cout<<"Месячные выплаты составляют:"<<m<<endl;
+    cout<<"Суммарноя выплата:"<<s<<endl;
+return 0;
+}
+
+6
+#include <iostream>
+using namespace std;
+int main(){
+    int z,x,c;
+    c=z;
+    z=x;
+    x=c;
+return 0;
+}
+
+7
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int x,z;
+    cout<<"Введите четырехзначное число:";
+    cin>>x;
+    z=x%100;
+    x=x/100;
+    x=z+x;
+    cout<<x<<endl;
+return 0;
+}
+8
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+    int x,c,s,h,r,z;
+    cout<<"Введите радиус банки в сантиметрах:";
+    cin>>r;
+    cout<<"Введите высоту банки в сантиметрах:";
+    cin>>h;
+    cout<<"Введите количество банок:";
+    cin>>x;
+    cout<<"Введите количество литров краски в банке с краской:";
+    cin>>z;
+    s=2*3.14*r*h;//Мне показалось,что здесь не важна идеальная точность, поэтому использовал лишь 2 знака после запятой.
+    s=s*x/150000; //1 литр краски хватает на 140000-160000 см2 по металлу.
+    c=s/z;
+    if (s%z>0){c=c+1;}
+    cout<<"Вам потребуется "<<c<<" банок краски"<<endl;
+return 0;
+}
+
+9
+#include <iostream>
+using namespace std;
+int main() {
+    int x,c,v,z;
+    cout<<"Введите ширину прямоугольника:";
+    cin>>x;
+    cout<<"Введите длинну прямоугольника:";
+    cin>>z;
+    cout<<"Пеоиметр прямоугольника="<<2*x+2*z<<endl;
+    cout<<"Введите 3 стороны триугольника:";
+    cin>>x>>z>>c;
+    cout<<"Периметр триугольника="<<x+z+c<<endl;
+    cout<<"Введите 4 стороны четырехугольника:";
+    cin>>x>>z>>c>>v;
+    cout<<"Периметр четырхугольника="<<x+z+c+v<<endl;
+return 0;
+}
+
