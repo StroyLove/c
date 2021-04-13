@@ -1,0 +1,189 @@
+
+
+1
+#include <iostream>
+using namespace std;
+int main() {
+    int x,c,age,i,maxAge,minAge;
+    maxAge=0;
+    minAge=1000;
+    c=0;
+   
+    cout<<"Введите количество посетителей:";
+    cin>>x;
+    int p[x];
+    cout<<"Вводите возраста посетителей:"<<endl;
+    for ( i = 0; i < x; ) {
+        i=i+1;
+        cout << "[" << i << "]" << ": ";
+        
+        cin >> age;
+        if (age>maxAge){
+            maxAge=age;}
+        if (age<minAge){
+            minAge=age;}
+        c=c+age;
+    }
+    c=c/x;
+  
+    
+    cout<<"Самый старший посетитель:"<<maxAge<<endl;
+    cout<<"Самый молодой посетитель:"<<minAge<<endl;
+    cout<<"Средний возраст посетителя:"<<c<<endl;
+    
+    
+    
+return 0;
+}
+
+2
+#include <iostream>
+using namespace std;
+int main() {
+    int x,c,i,z,v;
+    z=0;
+    i=0;
+    cout<<"Введите количетво ящиков:";
+    cin>>x;
+    v=x;
+    while(i==0) {
+        z=z+1;
+        cout<<"Введите количетво ящиков для погрузки в "<<z<<" машину:";
+        cin>>c;
+        x=x-c;
+        if (x==0){i=1;}
+        if (x<0){
+            cout<<"У вас закончились ящики.Попробуйте распределить их заново."<<endl;
+            i=0;
+            x=v;
+            z=0;
+        }
+    }
+    cout<<"Все ящики распределенны."<<endl;
+return 0;
+}
+
+
+3
+#include <iostream>
+using namespace std;
+int main() {
+    int x,c,i,z;
+    z=0;
+    i=0;
+    cout<<"Введите первую цифру диапазона:";
+    cin>>x;
+    cout<<"Введите вторую цифру диапазона:";
+    cin>>c;
+    int p[c];
+    if (x%2!=0){z=x;}
+    for (i=x; i<c;){
+        if (p[i]%2!=0){
+            z=z+p[i];}
+        x=x+1;
+        p[i+1]=x;
+        i=i+1;
+        }
+    cout<<”Сумма всех нечетных чисел:”<<z<<endl;
+return 0;
+}
+
+4
+
+#include <iostream>
+using namespace std;
+ 
+int main(){
+    int x=0;
+    int i,y;
+    cout <<"Введите высоту треугольника:";
+    cin>>x;
+ 
+    for (i=0; i<x; i++)
+    {
+        for (y=1; y<x-i; y++)
+        {
+            cout << ' ';
+        }
+ 
+        for (y=x-2*i; y<=x; y++)
+        {
+            cout<<'^';
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+
+5
+#include <iostream>
+using namespace std;
+ 
+int main(){
+    int x,c;
+    c=0;
+    cout <<"Введите число:";
+    cin>>x;
+    while (x>0){
+        if (c<x%10){
+            c=x%10;}
+        
+        x=x/10;
+    
+    }
+    cout<<"Самая большая цифра:"<<c<<endl;
+}
+
+
+8
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main(){
+    srand(time(NULL));
+    int x,z,i;
+    i=0;
+    int b=100;
+    int a=0;
+    x=rand()%(b-a+1);
+    
+    while (i<10) {
+        i++;
+        cout<<"Введите число:";
+        cin>>z;
+        if (z==x){
+            cout<<"Вы угадали число!"<<endl;
+            i=15;
+        }
+        else if (z>x){cout<<"Вы назвали число большее загаданного"<<endl;}
+        else if(z<x){cout<<"Вы назвали число меньше загаданного"<<endl;}
+    }
+   
+    if (i<14){
+        cout<<"Вы не угадали число"<<endl;
+        cout<<"Загаданное число было:"<<x<<endl;
+    }
+}
+
+
+10
+#include <iostream>
+using namespace std;
+ 
+int main(){
+    int x,c,z;
+    c=0;
+    z=0;
+    cout <<"Введите число:";
+    cin>>x;
+    while (x>0){
+        if (x%10%2==0){
+            c=c+1;}
+        else {
+            z=z+1;}
+        x=x/10;
+    
+    }
+    cout<<"Четных цифр:"<<c<<endl;
+    cout<<"Нечетных цифр:"<<z<<endl;
+}
